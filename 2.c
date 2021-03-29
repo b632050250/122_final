@@ -20,6 +20,7 @@ int main()
         {
             if(b[i]==a[j])
             {
+                printf("%d ",a[j]);
                 c[i]++;
             }
         }
