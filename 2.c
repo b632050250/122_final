@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j,max=0,p=1,q;
+    int n,i,j,max=0,p=1,q,r=0;
     scanf("%d",&n);
     if(n>1&&n<1001)
     {
-        int a[n],b[10000]={0},c[10000]={0},m[n];
+    int a[n],b[10000]={0},c[10000]={0},m[n];
     for(i=1; i<=10000; i++)
     {
         b[i]=i;
