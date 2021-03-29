@@ -3,8 +3,10 @@ int main()
 {
     int n,i,j,max=0,p=1;
     scanf("%d",&n);
-    int a[n],b[1000]={0},c[1000]={0},m[n];
-    for(i=0; i<=1000; i++)
+    if(n>1&&n<1001)
+    {
+        int a[n],b[10000]={0},c[10000]={0},m[n];
+    for(i=1; i<=10000; i++)
     {
         b[i]=i;
     }
@@ -12,7 +14,7 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-    for(i=0; i<=1000; i++)
+    for(i=1; i<=10000; i++)
     {
         for(j=0; j<n; j++)
         {
@@ -22,7 +24,7 @@ int main()
             }
         }
     }
-    for(i=0; i<=1000; i++)
+    for(i=1; i<=10000; i++)
     {
         if(max<c[i])
         {
@@ -38,6 +40,7 @@ int main()
     for(i=0; i<p; i++)
     {
         printf("%d ",m[i]);
+    }
     }
     return 0;
 }
