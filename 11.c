@@ -5,12 +5,12 @@ int main()
     scanf("%d %d",&n,&c);
     if(n>0&&n<32750)
     {
-        k=n;
+        k=n+1;
         while(k!=0)
         {
             if(k%10==c)
             {
-                k=n;
+                k=n+1;
                 break;
             }
             else
@@ -19,7 +19,7 @@ int main()
                 if(k==0)
                 {
                     n++;
-                    k=n;
+                    k=n+1;
                 }
             }
         }
